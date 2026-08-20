@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
 
-@theme inline{
+@theme {
   --font-space-grotesk: "Space Grotesk", sans-serif;
+
+  /* Color Palette (Diurutkan berdasarkan tingkat dominansi) */
+  /* 1. Paling Dominan - Deep Olive/Moss Green */
+  --color-primary: #546B41;
+  --color-palette-1: #546B41;
+
+  /* 2. Dominan Kedua - Sage Green */
+  --color-secondary: #99AD7A;
+  --color-palette-2: #99AD7A;
+
+  /* 3. Dominan Ketiga - Warm Khaki/Beige */
+  --color-tertiary: #DCCCAC;
+  --color-palette-3: #DCCCAC;
+
+  /* 4. Highlight & Background Terang - Cream/Warm White */
+  --color-light: #FFF8EC;
+  --color-cream: #FFF8EC;
+  --color-palette-4: #FFF8EC;
 }
 
 @layer base {
   body {
-    @apply font-space-grotesk;
+    @apply font-space-grotesk bg-light text-primary selection:bg-primary selection:text-light;
   }
 }
