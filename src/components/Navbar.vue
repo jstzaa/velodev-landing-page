@@ -14,11 +14,11 @@ const toggleMenu = () => {
       <h1 class="text-lg font-bold tracking-tight text-cream">Velodev</h1>
     </div>
     <ul class="hidden md:flex flex-row gap-6 text-sm font-medium text-tertiary">
-      <li><a href="" class="hover:text-cream transition-colors">Home</a></li>
-      <li><a href="" class="hover:text-cream transition-colors">About</a></li>
-      <li><a href="" class="hover:text-cream transition-colors">Service</a></li>
-      <li><a href="" class="hover:text-cream transition-colors">Pricing</a></li>
-      <li><a href="" class="hover:text-cream transition-colors">Contact</a></li>
+      <li><a href="#home" class="hover:text-cream transition-colors">Home</a></li>
+      <li><a href="#about" class="hover:text-cream transition-colors">About</a></li>
+      <li><a href="#services" class="hover:text-cream transition-colors">Service</a></li>
+      <li><a href="#pricing" class="hover:text-cream transition-colors">Pricing</a></li>
+      <li><a href="#contact" class="hover:text-cream transition-colors">Contact</a></li>
     </ul>
     <button
       type="button"
@@ -65,11 +65,11 @@ const toggleMenu = () => {
         class="md:hidden absolute bottom-24 py-6 inset-x-0 rounded-2xl shadow-2xl shadow-black/40 z-10 backdrop-blur-md bg-primary/95 border border-secondary/40"
       >
         <ul class="flex flex-col items-center justify-center gap-5 text-base text-tertiary">
-          <li><a href="" class="hover:text-cream transition-colors">Home</a></li>
-          <li><a href="" class="hover:text-cream transition-colors">About</a></li>
-          <li><a href="" class="hover:text-cream transition-colors">Service</a></li>
-          <li><a href="" class="hover:text-cream transition-colors">Pricing</a></li>
-          <li><a href="" class="hover:text-cream transition-colors">Contact</a></li>
+          <li><a href="#home" class="hover:text-cream transition-colors" @click="isMenuOpen = false">Home</a></li>
+          <li><a href="#about" class="hover:text-cream transition-colors" @click="isMenuOpen = false">About</a></li>
+          <li><a href="#services" class="hover:text-cream transition-colors" @click="isMenuOpen = false">Service</a></li>
+          <li><a href="#pricing" class="hover:text-cream transition-colors" @click="isMenuOpen = false">Pricing</a></li>
+          <li><a href="#contact" class="hover:text-cream transition-colors" @click="isMenuOpen = false">Contact</a></li>
         </ul>
       </aside>
     </Transition>

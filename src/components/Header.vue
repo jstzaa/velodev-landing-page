@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <header class="mx-5 my-5 md:mx-10 md:my-5 rounded-4xl bg-primary text-light border border-secondary/20 shadow-2xl relative overflow-hidden">
+  <header id="home" class="scroll-mt-24 mx-5 my-5 md:mx-10 md:my-5 rounded-4xl bg-primary text-light border border-secondary/20 shadow-2xl relative overflow-hidden">
     <!-- Subtle Background Glows inside the Card -->
     <div class="absolute -top-24 -left-24 w-96 h-96 bg-light/30 rounded-full blur-3xl pointer-events-none" />
     <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-light/30 rounded-full blur-3xl pointer-events-none" />
@@ -36,7 +36,7 @@
             </a>
 
             <a
-              href="#service"
+              href="#services"
               class="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-secondary/25 hover:bg-secondary/40 text-light border border-tertiary/40 font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
             >
               Lihat Layanan
